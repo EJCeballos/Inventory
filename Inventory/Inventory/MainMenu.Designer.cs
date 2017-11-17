@@ -35,8 +35,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
             this.SearchButton = new System.Windows.Forms.Button();
-            this.AdminButton2 = new System.Windows.Forms.Button();
-            this.AdminButton1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -54,7 +52,7 @@
             // CheckInButton
             // 
             this.CheckInButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CheckInButton.Location = new System.Drawing.Point(128, 170);
+            this.CheckInButton.Location = new System.Drawing.Point(119, 278);
             this.CheckInButton.Name = "CheckInButton";
             this.CheckInButton.Size = new System.Drawing.Size(229, 67);
             this.CheckInButton.TabIndex = 1;
@@ -65,7 +63,7 @@
             // CheckOutButton
             // 
             this.CheckOutButton.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.CheckOutButton.Location = new System.Drawing.Point(402, 170);
+            this.CheckOutButton.Location = new System.Drawing.Point(393, 278);
             this.CheckOutButton.Name = "CheckOutButton";
             this.CheckOutButton.Size = new System.Drawing.Size(229, 67);
             this.CheckOutButton.TabIndex = 2;
@@ -76,7 +74,7 @@
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(128, 348);
+            this.dataGridView1.Location = new System.Drawing.Point(119, 444);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(777, 204);
@@ -87,7 +85,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(125, 316);
+            this.label1.Location = new System.Drawing.Point(115, 407);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(175, 24);
             this.label1.TabIndex = 4;
@@ -95,33 +93,12 @@
             // 
             // SearchButton
             // 
-            this.SearchButton.Location = new System.Drawing.Point(676, 170);
+            this.SearchButton.Location = new System.Drawing.Point(667, 278);
             this.SearchButton.Name = "SearchButton";
             this.SearchButton.Size = new System.Drawing.Size(229, 67);
             this.SearchButton.TabIndex = 5;
             this.SearchButton.Text = "Search";
             this.SearchButton.UseVisualStyleBackColor = true;
-            // 
-            // AdminButton2
-            // 
-            this.AdminButton2.Location = new System.Drawing.Point(676, 260);
-            this.AdminButton2.Name = "AdminButton2";
-            this.AdminButton2.Size = new System.Drawing.Size(229, 67);
-            this.AdminButton2.TabIndex = 6;
-            this.AdminButton2.Text = "More...";
-            this.AdminButton2.UseVisualStyleBackColor = true;
-            this.AdminButton2.Visible = false;
-            // 
-            // AdminButton1
-            // 
-            this.AdminButton1.Location = new System.Drawing.Point(402, 260);
-            this.AdminButton1.Name = "AdminButton1";
-            this.AdminButton1.Size = new System.Drawing.Size(229, 67);
-            this.AdminButton1.TabIndex = 7;
-            this.AdminButton1.Text = "Add New User";
-            this.AdminButton1.UseVisualStyleBackColor = true;
-            this.AdminButton1.Visible = false;
-            this.AdminButton1.Click += new System.EventHandler(this.AdminButton1_Click);
             // 
             // MainMenu
             // 
@@ -131,9 +108,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveBorder;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(999, 589);
-            this.Controls.Add(this.AdminButton1);
-            this.Controls.Add(this.AdminButton2);
+            this.ClientSize = new System.Drawing.Size(1128, 698);
             this.Controls.Add(this.SearchButton);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
@@ -165,7 +140,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button SearchButton;
-        private System.Windows.Forms.Button AdminButton2;
-        private System.Windows.Forms.Button AdminButton1;
     }
 }
