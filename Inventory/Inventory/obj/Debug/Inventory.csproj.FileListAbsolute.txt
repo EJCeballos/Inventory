@@ -1,0 +1,34 @@
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.csprojResolveAssemblyReference.cache
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.Login.resources
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.Cache
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\bin\Debug\Inventory.exe
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\bin\Debug\Inventory.pdb
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.exe
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\Ceballose\Documents\Visual Studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.StockMain.resources
+C:\Users\Ceballose\documents\visual studio 2017\Projects\Inventory\Inventory\bin\Debug\stock.mdf
+C:\Users\Ceballose\documents\visual studio 2017\Projects\Inventory\Inventory\bin\Debug\stock_log.ldf
+C:\Users\Ceballose\documents\visual studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.MainMenu.resources
+C:\Users\Ceballose\documents\visual studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.CheckIn.resources
+C:\Users\Ceballose\documents\visual studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.ResolveComReference.cache
+C:\Users\Ceballose\documents\visual studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\Ceballose\documents\visual studio 2017\Projects\Inventory\Inventory\obj\Debug\Inventory.CreateNewUser.resources
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.csprojResolveAssemblyReference.cache
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.csproj.ResolveComReference.cache
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.CheckIn.resources
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.MainMenu.resources
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Login.resources
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.Properties.Resources.resources
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.csproj.GenerateResource.Cache
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.csproj.CoreCompileInputs.cache
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.exe
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.pdb
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\bin\Debug\3002Stock.mdf
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\bin\Debug\3002Stock_log.ldf
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\bin\Debug\Inventory.exe.config
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\bin\Debug\Inventory.exe
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\bin\Debug\Inventory.pdb
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.CheckOut.resources
+C:\Users\Ceballose\source\repos\Inventory\Inventory\Inventory\obj\Debug\Inventory.NewUser.resources

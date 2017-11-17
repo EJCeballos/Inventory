@@ -3,3 +3,6 @@
 ################################################################################
 
 /Inventory/Inventory/bin/Debug
+/.vs/Inventory/v15/Server/sqlite3/db.lock
+/Inventory/.vs/Inventory/v15/Server/sqlite3/db.lock
+/Inventory/.vs/Inventory/v15/sqlite3/db.lock
