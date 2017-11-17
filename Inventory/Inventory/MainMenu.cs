@@ -30,13 +30,12 @@ namespace Inventory
             if (User.Admin!= "" )
             {
                 //Debug.WriteLine("Make buttons visable");
-                this.AdminButton1.Visible = true;
-                this.AdminButton2.Visible = true;
+                this.menuStrip1.Visible = true;
+                
             }
             else
             {
-                this.AdminButton1.Visible = false;
-                this.AdminButton2.Visible = false;
+                this.menuStrip1.Visible = false;
             }
 
           
@@ -88,10 +87,16 @@ namespace Inventory
             Application.Exit();
         }
 
-        private void AdminButton1_Click(object sender, EventArgs e)
+
+        private void createNewUserToolStripMenuItem_Click(object sender, EventArgs e)
         {
             NewUser createUserForm = new NewUser();
             createUserForm.ShowDialog();
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
