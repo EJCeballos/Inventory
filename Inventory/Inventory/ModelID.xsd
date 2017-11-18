@@ -12,7 +12,7 @@
               <DbSource ConnectionRef="_3002StockConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="FillMainStockMaterialInfo" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetDataMainStockMaterialInfo" GeneratorSourceName="FillMainStockMaterialInfo" GetMethodModifier="Public" GetMethodName="GetDataMainStockMaterialInfo" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetDataMainStockMaterialInfo" UserSourceName="FillMainStockMaterialInfo">
                 <SelectCommand>
                   <DbCommand CommandType="Text" ModifiedByUser="true">
-                    <CommandText>SELECT MainStock.SerialNumber, MainStock.Location, MaterialID.MaterialName
+                    <CommandText>SELECT MainStock.SerialNumber, MainStock.Location, MaterialID.MaterialName, MaterialID.MaterialDescription, MaterialID.Valuable
 FROM     MainStock INNER JOIN
                   MaterialID ON MainStock.MaterialID = MaterialID.MaterialID</CommandText>
                     <Parameters />
@@ -24,6 +24,8 @@ FROM     MainStock INNER JOIN
               <Mapping SourceColumn="SerialNumber" DataSetColumn="SerialNumber" />
               <Mapping SourceColumn="Location" DataSetColumn="Location" />
               <Mapping SourceColumn="MaterialName" DataSetColumn="MaterialName" />
+              <Mapping SourceColumn="MaterialDescription" DataSetColumn="MaterialDescription" />
+              <Mapping SourceColumn="Valuable" DataSetColumn="Valuable" />
             </Mappings>
             <Sources />
           </TableAdapter>
@@ -118,7 +120,7 @@ WHERE  (History.Status IS NULL) AND (History.Person = @Person)</CommandText>
   <xs:element name="ModelID" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="ModelID" msprop:Generator_UserDSName="ModelID">
     <xs:complexType>
       <xs:choice minOccurs="0" maxOccurs="unbounded">
-        <xs:element name="MaterialID" msprop:Generator_TableClassName="MaterialIDDataTable" msprop:Generator_TableVarName="tableMaterialID" msprop:Generator_TablePropName="MaterialID" msprop:Generator_RowDeletingName="MaterialIDRowDeleting" msprop:Generator_RowChangingName="MaterialIDRowChanging" msprop:Generator_RowEvHandlerName="MaterialIDRowChangeEventHandler" msprop:Generator_RowDeletedName="MaterialIDRowDeleted" msprop:Generator_UserTableName="MaterialID" msprop:Generator_RowChangedName="MaterialIDRowChanged" msprop:Generator_RowEvArgName="MaterialIDRowChangeEvent" msprop:Generator_RowClassName="MaterialIDRow">
+        <xs:element name="MaterialID" msprop:Generator_TableClassName="MaterialIDDataTable" msprop:Generator_TableVarName="tableMaterialID" msprop:Generator_RowChangedName="MaterialIDRowChanged" msprop:Generator_TablePropName="MaterialID" msprop:Generator_RowDeletingName="MaterialIDRowDeleting" msprop:Generator_RowChangingName="MaterialIDRowChanging" msprop:Generator_RowEvHandlerName="MaterialIDRowChangeEventHandler" msprop:Generator_RowDeletedName="MaterialIDRowDeleted" msprop:Generator_RowClassName="MaterialIDRow" msprop:Generator_UserTableName="MaterialID" msprop:Generator_RowEvArgName="MaterialIDRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="MaterialID" msprop:Generator_ColumnVarNameInTable="columnMaterialID" msprop:Generator_ColumnPropNameInRow="MaterialID" msprop:Generator_ColumnPropNameInTable="MaterialIDColumn" msprop:Generator_UserColumnName="MaterialID">
@@ -146,7 +148,7 @@ WHERE  (History.Status IS NULL) AND (History.Person = @Person)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="History" msprop:Generator_TableClassName="HistoryDataTable" msprop:Generator_TableVarName="tableHistory" msprop:Generator_RowChangedName="HistoryRowChanged" msprop:Generator_TablePropName="History" msprop:Generator_RowDeletingName="HistoryRowDeleting" msprop:Generator_RowChangingName="HistoryRowChanging" msprop:Generator_RowEvHandlerName="HistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoryRowDeleted" msprop:Generator_RowClassName="HistoryRow" msprop:Generator_UserTableName="History" msprop:Generator_RowEvArgName="HistoryRowChangeEvent">
+        <xs:element name="History" msprop:Generator_TableClassName="HistoryDataTable" msprop:Generator_TableVarName="tableHistory" msprop:Generator_TablePropName="History" msprop:Generator_RowDeletingName="HistoryRowDeleting" msprop:Generator_RowChangingName="HistoryRowChanging" msprop:Generator_RowEvHandlerName="HistoryRowChangeEventHandler" msprop:Generator_RowDeletedName="HistoryRowDeleted" msprop:Generator_UserTableName="History" msprop:Generator_RowChangedName="HistoryRowChanged" msprop:Generator_RowEvArgName="HistoryRowChangeEvent" msprop:Generator_RowClassName="HistoryRow">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="DateTime" msprop:Generator_ColumnVarNameInTable="columnDateTime" msprop:Generator_ColumnPropNameInRow="DateTime" msprop:Generator_ColumnPropNameInTable="DateTimeColumn" msprop:Generator_UserColumnName="DateTime" type="xs:dateTime" />
@@ -181,7 +183,7 @@ WHERE  (History.Status IS NULL) AND (History.Person = @Person)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="MainStock" msprop:Generator_TableClassName="MainStockDataTable" msprop:Generator_TableVarName="tableMainStock" msprop:Generator_TablePropName="MainStock" msprop:Generator_RowDeletingName="MainStockRowDeleting" msprop:Generator_RowChangingName="MainStockRowChanging" msprop:Generator_RowEvHandlerName="MainStockRowChangeEventHandler" msprop:Generator_RowDeletedName="MainStockRowDeleted" msprop:Generator_UserTableName="MainStock" msprop:Generator_RowChangedName="MainStockRowChanged" msprop:Generator_RowEvArgName="MainStockRowChangeEvent" msprop:Generator_RowClassName="MainStockRow">
+        <xs:element name="MainStock" msprop:Generator_TableClassName="MainStockDataTable" msprop:Generator_TableVarName="tableMainStock" msprop:Generator_RowChangedName="MainStockRowChanged" msprop:Generator_TablePropName="MainStock" msprop:Generator_RowDeletingName="MainStockRowDeleting" msprop:Generator_RowChangingName="MainStockRowChanging" msprop:Generator_RowEvHandlerName="MainStockRowChangeEventHandler" msprop:Generator_RowDeletedName="MainStockRowDeleted" msprop:Generator_RowClassName="MainStockRow" msprop:Generator_UserTableName="MainStock" msprop:Generator_RowEvArgName="MainStockRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="SerialNumber" msprop:Generator_ColumnVarNameInTable="columnSerialNumber" msprop:Generator_ColumnPropNameInRow="SerialNumber" msprop:Generator_ColumnPropNameInTable="SerialNumberColumn" msprop:Generator_UserColumnName="SerialNumber">
@@ -205,6 +207,14 @@ WHERE  (History.Status IS NULL) AND (History.Person = @Person)</CommandText>
                   </xs:restriction>
                 </xs:simpleType>
               </xs:element>
+              <xs:element name="MaterialDescription" msprop:Generator_ColumnVarNameInTable="columnMaterialDescription" msprop:Generator_ColumnPropNameInRow="MaterialDescription" msprop:Generator_ColumnPropNameInTable="MaterialDescriptionColumn" msprop:Generator_UserColumnName="MaterialDescription" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Valuable" msprop:Generator_ColumnVarNameInTable="columnValuable" msprop:Generator_ColumnPropNameInRow="Valuable" msprop:Generator_ColumnPropNameInTable="ValuableColumn" msprop:Generator_UserColumnName="Valuable" type="xs:int" minOccurs="0" />
             </xs:sequence>
           </xs:complexType>
         </xs:element>

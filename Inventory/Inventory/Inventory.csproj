@@ -69,13 +69,19 @@
     <Compile Include="CheckIn.Designer.cs">
       <DependentUpon>CheckIn.cs</DependentUpon>
     </Compile>
-    <Compile Include="CheckOut.cs">
+    <Compile Include="CheckInCheckOut.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CheckOut.Designer.cs">
-      <DependentUpon>CheckOut.cs</DependentUpon>
+    <Compile Include="CheckInCheckOut.Designer.cs">
+      <DependentUpon>CheckInCheckOut.cs</DependentUpon>
     </Compile>
     <Compile Include="Data.cs" />
+    <Compile Include="SearchDataBase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SearchDataBase.Designer.cs">
+      <DependentUpon>SearchDataBase.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModelID.cs">
       <DependentUpon>ModelID.xsd</DependentUpon>
     </Compile>
@@ -108,8 +114,8 @@
     <EmbeddedResource Include="CheckIn.resx">
       <DependentUpon>CheckIn.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CheckOut.resx">
-      <DependentUpon>CheckOut.cs</DependentUpon>
+    <EmbeddedResource Include="CheckInCheckOut.resx">
+      <DependentUpon>CheckInCheckOut.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenu.resx">
       <DependentUpon>MainMenu.cs</DependentUpon>
@@ -129,6 +135,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="SearchDataBase.resx">
+      <DependentUpon>SearchDataBase.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="ModelID.xsc">
       <DependentUpon>ModelID.xsd</DependentUpon>
     </None>

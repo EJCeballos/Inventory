@@ -355,6 +355,10 @@ namespace Inventory {
             
             private global::System.Data.DataColumn columnMaterialName;
             
+            private global::System.Data.DataColumn columnMaterialDescription;
+            
+            private global::System.Data.DataColumn columnValuable;
+            
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             public MainStockDataTable() {
@@ -414,6 +418,22 @@ namespace Inventory {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn MaterialDescriptionColumn {
+                get {
+                    return this.columnMaterialDescription;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public global::System.Data.DataColumn ValuableColumn {
+                get {
+                    return this.columnValuable;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
             [global::System.ComponentModel.Browsable(false)]
             public int Count {
                 get {
@@ -449,12 +469,14 @@ namespace Inventory {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
-            public MainStockRow AddMainStockRow(string SerialNumber, string Location, string MaterialName) {
+            public MainStockRow AddMainStockRow(string SerialNumber, string Location, string MaterialName, string MaterialDescription, int Valuable) {
                 MainStockRow rowMainStockRow = ((MainStockRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         SerialNumber,
                         Location,
-                        MaterialName};
+                        MaterialName,
+                        MaterialDescription,
+                        Valuable};
                 rowMainStockRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowMainStockRow);
                 return rowMainStockRow;
@@ -487,6 +509,8 @@ namespace Inventory {
                 this.columnSerialNumber = base.Columns["SerialNumber"];
                 this.columnLocation = base.Columns["Location"];
                 this.columnMaterialName = base.Columns["MaterialName"];
+                this.columnMaterialDescription = base.Columns["MaterialDescription"];
+                this.columnValuable = base.Columns["Valuable"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -498,6 +522,10 @@ namespace Inventory {
                 base.Columns.Add(this.columnLocation);
                 this.columnMaterialName = new global::System.Data.DataColumn("MaterialName", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnMaterialName);
+                this.columnMaterialDescription = new global::System.Data.DataColumn("MaterialDescription", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaterialDescription);
+                this.columnValuable = new global::System.Data.DataColumn("Valuable", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnValuable);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnSerialNumber}, true));
                 this.columnSerialNumber.AllowDBNull = false;
@@ -507,6 +535,7 @@ namespace Inventory {
                 this.columnLocation.MaxLength = 50;
                 this.columnMaterialName.AllowDBNull = false;
                 this.columnMaterialName.MaxLength = 50;
+                this.columnMaterialDescription.MaxLength = 2147483647;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1302,6 +1331,62 @@ namespace Inventory {
                     this[this.tableMainStock.MaterialNameColumn] = value;
                 }
             }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public string MaterialDescription {
+                get {
+                    try {
+                        return ((string)(this[this.tableMainStock.MaterialDescriptionColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'MaterialDescription\' in table \'MainStock\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMainStock.MaterialDescriptionColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public int Valuable {
+                get {
+                    try {
+                        return ((int)(this[this.tableMainStock.ValuableColumn]));
+                    }
+                    catch (global::System.InvalidCastException e) {
+                        throw new global::System.Data.StrongTypingException("The value for column \'Valuable\' in table \'MainStock\' is DBNull.", e);
+                    }
+                }
+                set {
+                    this[this.tableMainStock.ValuableColumn] = value;
+                }
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsMaterialDescriptionNull() {
+                return this.IsNull(this.tableMainStock.MaterialDescriptionColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetMaterialDescriptionNull() {
+                this[this.tableMainStock.MaterialDescriptionColumn] = global::System.Convert.DBNull;
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public bool IsValuableNull() {
+                return this.IsNull(this.tableMainStock.ValuableColumn);
+            }
+            
+            [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+            [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "15.0.0.0")]
+            public void SetValuableNull() {
+                this[this.tableMainStock.ValuableColumn] = global::System.Convert.DBNull;
+            }
         }
         
         /// <summary>
@@ -1748,6 +1833,8 @@ namespace Inventory.ModelIDTableAdapters {
             tableMapping.ColumnMappings.Add("SerialNumber", "SerialNumber");
             tableMapping.ColumnMappings.Add("Location", "Location");
             tableMapping.ColumnMappings.Add("MaterialName", "MaterialName");
+            tableMapping.ColumnMappings.Add("MaterialDescription", "MaterialDescription");
+            tableMapping.ColumnMappings.Add("Valuable", "Valuable");
             this._adapter.TableMappings.Add(tableMapping);
         }
         
@@ -1764,9 +1851,9 @@ namespace Inventory.ModelIDTableAdapters {
             this._commandCollection = new global::System.Data.SqlClient.SqlCommand[1];
             this._commandCollection[0] = new global::System.Data.SqlClient.SqlCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT MainStock.SerialNumber, MainStock.Location, MaterialID.MaterialName\r\nFROM " +
-                "    MainStock INNER JOIN\r\n                  MaterialID ON MainStock.MaterialID =" +
-                " MaterialID.MaterialID";
+            this._commandCollection[0].CommandText = "SELECT MainStock.SerialNumber, MainStock.Location, MaterialID.MaterialName, Mater" +
+                "ialID.MaterialDescription, MaterialID.Valuable\r\nFROM     MainStock INNER JOIN\r\n " +
+                "                 MaterialID ON MainStock.MaterialID = MaterialID.MaterialID";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         

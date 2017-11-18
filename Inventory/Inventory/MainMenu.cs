@@ -44,7 +44,7 @@ namespace Inventory
         private void button1_Click_1(object sender, EventArgs e)
         {
             //CheckIn Item
-            CheckOut checkIn = new CheckOut(false);
+            CheckInCheckOut checkIn = new CheckInCheckOut(false);
             checkIn.ShowDialog();
             UpdateDataGridView();
         }
@@ -53,7 +53,7 @@ namespace Inventory
         private void button2_Click_1(object sender, EventArgs e)
         {
             //CheckOut Item
-            CheckOut checkOut = new CheckOut(true);
+            CheckInCheckOut checkOut = new CheckInCheckOut(true);
             checkOut.ShowDialog();
             UpdateDataGridView();
         }
@@ -101,6 +101,8 @@ namespace Inventory
 
         private void button3_Click(object sender, EventArgs e)
         {
+            SearchDataBase search = new SearchDataBase();
+            search.ShowDialog();
 
         }
     }
