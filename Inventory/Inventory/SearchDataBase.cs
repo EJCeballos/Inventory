@@ -21,9 +21,12 @@ namespace Inventory
         {
             // TODO: This line of code loads data into the 'modelID.MainStock' table. You can move, or remove it, as needed.
             this.mainStockTableAdapter.FillMainStockMaterialInfo(this.modelID.MainStock);
+           
             // TODO: This line of code loads data into the 'modelID.MainStock' table. You can move, or remove it, as needed.
             this.mainStockTableAdapter.FillMainStockMaterialInfo(this.modelID.MainStock);
-
+            dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.AutoResizeColumn(1);
+            dataGridView1.Refresh();
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
