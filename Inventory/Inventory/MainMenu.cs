@@ -76,9 +76,13 @@ namespace Inventory
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
             dataGridView1.AutoGenerateColumns = true;
+            dataGridView1.AllowUserToOrderColumns = false;
+            dataGridView1.AllowDrop = false;
+            dataGridView1.ClearSelection();
             dataGridView1.DataSource = table;
             dataGridView1.AutoResizeColumn(1);
             dataGridView1.Refresh();
+            dataGridView1.ClearSelection();
 
         }
 

@@ -60,14 +60,14 @@
             // 
             // emailInput
             // 
-            this.emailInput.Location = new System.Drawing.Point(145, 231);
+            this.emailInput.Location = new System.Drawing.Point(142, 237);
             this.emailInput.Name = "emailInput";
             this.emailInput.Size = new System.Drawing.Size(214, 22);
             this.emailInput.TabIndex = 3;
             // 
             // passwordInput
             // 
-            this.passwordInput.Location = new System.Drawing.Point(145, 304);
+            this.passwordInput.Location = new System.Drawing.Point(142, 311);
             this.passwordInput.Name = "passwordInput";
             this.passwordInput.PasswordChar = '*';
             this.passwordInput.Size = new System.Drawing.Size(214, 22);
@@ -86,7 +86,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(145, 208);
+            this.label3.Location = new System.Drawing.Point(142, 208);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(46, 17);
             this.label3.TabIndex = 8;
@@ -95,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(145, 281);
+            this.label4.Location = new System.Drawing.Point(142, 281);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(73, 17);
             this.label4.TabIndex = 9;
@@ -114,7 +114,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(151, 134);
+            this.label5.Location = new System.Drawing.Point(142, 134);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 17);
             this.label5.TabIndex = 12;
@@ -122,10 +122,10 @@
             // 
             // usernameInput
             // 
-            this.usernameInput.Location = new System.Drawing.Point(142, 163);
+            this.usernameInput.Location = new System.Drawing.Point(142, 165);
             this.usernameInput.Name = "usernameInput";
             this.usernameInput.Size = new System.Drawing.Size(214, 22);
-            this.usernameInput.TabIndex = 11;
+            this.usernameInput.TabIndex = 2;
             // 
             // NewUser
             // 
