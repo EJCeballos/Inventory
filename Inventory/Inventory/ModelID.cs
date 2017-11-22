@@ -4,6 +4,8 @@
 
     partial class ModelID
     {
-
+        partial class MainStockDataTable
+        {
+        }
     }
 }

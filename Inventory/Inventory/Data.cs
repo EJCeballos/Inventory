@@ -306,12 +306,17 @@ namespace Inventory
                     MessageBox.Show("This is an unknown item please make sure to scan the correct serial number or update the modelID list.");
                    
                 }
+                MessageBox.Show("This worked");
                 dr.Close();
                 con.Close();
                 return false;
             }
         }
 
+        public static void UpdateMaterialID()
+        {
+
+        }
         
 
     

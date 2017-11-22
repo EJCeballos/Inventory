@@ -74,19 +74,24 @@ namespace Inventory
                     CheckOutInput.Select();
                     if (Data.CheckIn3002Stock(FilteredSerialNumber, location))
                     {
-                        this.Close();
+                      
                         location = null;
                         FilteredSerialNumber = null;
                         MessageBox.Show("Success");
+                        this.Close();
                     }
                     else
                     {
                         location = null;
                         FilteredSerialNumber = null;
-                        this.Close();
                         MessageBox.Show("Try again");
+                        this.Close();
                     }
 
+                }
+                else
+                {
+                    MessageBox.Show("Nothing Happened");
                 }
             }
             
